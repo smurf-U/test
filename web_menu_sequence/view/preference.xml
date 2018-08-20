@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="view_users_form_simple_modif_inherit" model="ir.ui.view">
+        <field name="name">res.users.preferences.form.inherit</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
+        <field name="arch" type="xml">
+            <footer position="before">
+                <group>
+                    <field name="menu_sequence_ids">
+                        <tree>
+                            <field name="sequence" widget="handle"/>
+                            <field name="menu_id"/>
+                        </tree>
+                    </field>
+                </group>
+            </footer>
+        </field>
+    </record>
+
+</odoo>
